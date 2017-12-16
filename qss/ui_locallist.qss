@@ -1,0 +1,58 @@
+QScrollArea {
+    border: none;
+}
+
+QScrollArea {
+    border: none;
+}
+
+
+QLabel {
+    color: #DCDDE4;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+}
+
+
+QPushButton {
+    border: none;
+    color: #2E6BB0;
+}
+
+
+QTableView {
+    background: #16181C;
+    alternate-background-color: #1A1C20;
+    border: none;
+    color: #DCDDE4;
+}
+
+QTableView::item {
+    border: none;
+    outline: none;
+    outline-style: none;
+}
+
+QTableView::item:hover {
+    background: #313337;
+}
+
+QTableView::item:selected {
+    background: #313337;
+}
+
+QAbstractItemView {
+    outline: none;
+}
+
+QHeaderView::section {
+    background-color: #16181C;
+    color: white;
+    border: none;
+    padding: 4px;
+    border-right: 1px solid #23262C;
+}
+
+QHeaderView::section:hover {
+    background-color: #232529;
+}

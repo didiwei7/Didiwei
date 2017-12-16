@@ -1,0 +1,131 @@
+﻿QLabel {
+    color: green;
+    font-size: 9px;
+    font-family: "Microsoft YaHei";
+}
+
+QLabel {
+    color: green;
+    font-size: 9px;
+    font-family: "Microsoft YaHei";
+}
+
+QTableWidget 
+{
+    background: #2D2F33;
+    alternate-background-color: #303236;
+    border: none;
+    border-top: 1px solid #343437;
+    color: #DCDDE4;
+}
+
+QTableWidget::item 
+{
+    border: none;
+    outline: none;
+    outline-style: none;
+}
+
+QTableWidget::item:hover 
+{
+    background: #313337;
+}
+
+QTableWidget::item:selected
+{
+    background: #313337;
+}
+
+QAbstractItemView 
+{
+    outline: none;
+}
+
+QToolButton{
+    background: rgb(234, 234, 235);
+    border-radius: 2px;
+}
+
+QToolButton:hover{
+    background:rgb(207,207,207);
+    border-radius:2px;
+}
+
+QToolButton:pressed{
+    background:rgb(176, 216, 155);
+    border-radius:2px;
+    padding-top :1px;
+}
+
+QSlider::groove:horizontal
+{
+    border: 1px solid #C0C0C0;
+    height: 2px;
+    background: #C0C0C0;
+    margin: 0px;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal
+{
+    background: #232629;
+    border: 1px solid #565a5e;
+    width:  8px;
+    height: 8px;
+    margin: -4px 0;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover
+{
+    background: #87CEFA;
+}
+
+QSlider::handle:horizontal:pressed
+{
+    background: #87CEFA;
+    border: 1px solid #87CEFA;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0;
+    border-radius: 5px;
+}
+
+QSlider#slider_duration::groove:horizontal 
+{
+    height: 2px;
+    background: #C0C0C0;
+    margin: 0px;
+    border: 1px solid #C0C0C0;
+    border-radius: 2px;
+}
+
+QSlider#slider_duration::sub-page:horizontal
+{
+    border: 1px solid #B82525;
+    border-radius: 2px;
+    background: #B82525;
+}
+
+QSlider#slider_duration::handle:horizontal 
+{
+    background: #B82525;
+    border: 1px solid #565A5E;
+    width:  8px;
+    height: 8px;
+    margin: -4px 0;
+    border-radius: 5px;
+}
+
+QSlider#slider_duration::handle:horizontal:hover
+{
+    background: #EE7600;
+}
+
+QSlider#slider_duration::handle:horizontal:pressed
+{
+    background: #EE7600;
+    border: 1px solid #EE7600;
+}
+
+
