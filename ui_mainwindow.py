@@ -85,6 +85,12 @@ class ui_mainwindow(QMainWindow):
         self.widget_central.setLayout(layout_1)
         self.setCentralWidget(self.widget_central)
 
+    def closeEvent(self, event):
+        self.c_ui_player.playlist_save()
+        self.c_ui_searchedlist.model.removeRows(0, self.c_ui_searchedlist.model.rowCount())
+        self.c_ui_searchedlist.model.submitAll()
+        event.accept()
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

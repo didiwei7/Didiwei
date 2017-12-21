@@ -42,7 +42,7 @@ class ui_palyer(QFrame):
     def init_player(self):
         self.playlist = QMediaPlaylist()
         self.playlist.setPlaybackMode(QMediaPlaylist.Loop)
-        self.playlist_load()
+        # self.playlist_load()
         
         self.player = QMediaPlayer()
         self.player.setPlaylist(self.playlist)
@@ -108,9 +108,11 @@ class ui_palyer(QFrame):
     def set_layout(self):
         # 布局
         layout_1 = QHBoxLayout()
+        layout_1.addSpacing(20)
         layout_1.addWidget(self.btn_pre)
         layout_1.addWidget(self.btn_play_pause)
         layout_1.addWidget(self.btn_next)
+        layout_1.addSpacing(20)
 
         layout_1.addWidget(self.label_duration_now)
         layout_1.addWidget(self.slider_duration)
@@ -201,6 +203,10 @@ class ui_palyer(QFrame):
         time.sleep(0.01)
         self.playlist_save()
 
+    def playlist_del(self, index):
+        self.playlist.removeMedia(index)
+        self.playlist_save()
+
     def playlist_set_index(self, index):
         self.player.stop()
         self.playlist.setCurrentIndex(index)
@@ -230,7 +236,6 @@ class ui_palyer(QFrame):
     def update_position_set(self, position):
         if qAbs(self.player.position() - position) > 99:
             self.player.setPosition(position)
-
 
     def closeEvent(self, event):
         self.playlist_save()
